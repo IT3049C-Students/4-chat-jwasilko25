@@ -83,6 +83,10 @@ sendMessages(sender,message);
 myMessage.value="";
 });
 
+saveButton.addEventListener("click", function(saveButtonClickEvent) {
+  localStorage.setItem("username", nameInput.value);
+});
+
 function savedUsernameCheck(){
   if(localStorage.getItem("username") == "" ){
     myMessage.disabled = true;
