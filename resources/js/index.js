@@ -83,3 +83,12 @@ sendMessages(sender,message);
 myMessage.value="";
 });
 
+function savedUsernameCheck(){
+  if(localStorage.getItem("username") == "" ){
+    myMessage.disabled = true;
+  }
+  else {
+    myMessage.disabled = false;
+  }
+}
+
